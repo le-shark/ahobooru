@@ -1,0 +1,18 @@
+html {
+  font-family: sans-serif;
+}
+
+.home-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.home-logo {
+  width: 400px;
+}
+
+.home-search-box {
+  width: 400px;
+}
