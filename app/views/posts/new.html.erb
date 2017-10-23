@@ -1,5 +1,7 @@
-<%= form_for @post do |post_form| %>
-  <%= post_form.hidden_field(:picture_cache) %>
-  <%= post_form.file_field(:picture) %>
-  <%= post_form.submit "save" %>
+<%= form_for @post do |form| %>
+  <%= form.text_area :title %>
+  <%= form.text_area :tag_list, placeholder: "Separate tags with comma" %>
+  <%= form.hidden_field :picture_cache %>
+  <%= form.file_field :picture %>
+  <%= form.submit "save" %>
 <% end %>
