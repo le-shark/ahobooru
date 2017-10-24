@@ -1,4 +1,10 @@
+<% @no_layout = true %>
 <div class="home-container">
   <%= image_tag "logo.png", class: "home-logo" %>
-  <input class="home-search-box" type="text" name="" value="" placeholder="search">
+  <%= link_to "Browse", posts_path %>
+  <%= form_tag posts_path, method: :get do %>
+    <%= text_field_tag :q, params[:q], placeholder: "Search", class: "home-search-box" %>
+    <%= submit_tag "Search", name: nil %>
+  <% end %>
+  <p><small>If there are multiple words in the tag's name, use an underscore</small></p>
 </div>

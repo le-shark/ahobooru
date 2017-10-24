@@ -11,6 +11,7 @@ class Post < ApplicationRecord
 
   def format_tags
     if self.tag_list
+      self.tag_list = self.tag_list.each {|t| t.gsub!(/\s/, '_')}
       self.tag_list = self.tag_list.each {|t| t.gsub!(/[^0-9A-Za-z_]/, '')}
     end
   end

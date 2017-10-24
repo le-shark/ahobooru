@@ -1,5 +1,16 @@
+$booru-red: #BD5866;
+
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-family: sans-serif;
+}
+
+a {
+  color: $booru-red;
+  text-decoration: none;
 }
 
 .home-container {
@@ -15,4 +26,35 @@ html {
 
 .home-search-box {
   width: 400px;
+}
+
+.layout-header {
+  padding: 0 15px;
+  h3 {
+    color: $booru-red;
+  }
+}
+
+.sidebar {
+  overflow: auto;
+  padding: 10px 20px 10px 10px;
+}
+
+.sidebar-search-box {
+  width: 100%;
+}
+
+.main-content {
+  padding: 10px;
+}
+
+.thumb-container {
+  text-align: center;
+  width: 180px;
+  height: 180px;
+}
+
+.image-thumb {
+  height: 100%;
+  width: auto;
 }

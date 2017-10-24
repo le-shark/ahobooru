@@ -1,3 +1,7 @@
 <% @posts.each do |post| %>
-  <%= post.title %>
+  <div class="thumb-container">
+    <%= link_to post do %>
+      <%= image_tag post.picture_url, class: "image-thumb" %>
+    <% end %>
+  </div>
 <% end %>

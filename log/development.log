@@ -3112,3 +3112,2128 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 64ms (Views: 38.4ms | ActiveRecord: 2.2ms)
 
 
+Started GET "/index" for 127.0.0.1 at 2017-10-23 20:35:42 +0200
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (162.6ms)
+Completed 200 OK in 1444ms (Views: 1061.8ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-23 20:41:03 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (54.5ms)
+Completed 200 OK in 105ms (Views: 86.2ms | ActiveRecord: 0.0ms)
+
+
+  [1m[36mActsAsTaggableOn::Tag Load (0.3ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/" for 127.0.0.1 at 2017-10-23 21:18:50 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 4ms
+
+
+  
+SyntaxError (/home/andrew/workspace/ahobooru/app/views/static_pages/home.html.erb:3: syntax error, unexpected ',', expecting ')'
+fer.append=  form_for (:query, url: index_path, method: :get
+                              ^
+/home/andrew/workspace/ahobooru/app/views/static_pages/home.html.erb:11: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/static_pages/home.html.erb:3: syntax error, unexpected ',', expecting ')'
+app/views/static_pages/home.html.erb:11: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/" for 127.0.0.1 at 2017-10-23 21:19:11 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 4ms
+
+
+  
+SyntaxError (/home/andrew/workspace/ahobooru/app/views/static_pages/home.html.erb:3: syntax error, unexpected ',', expecting ')'
+fer.append=  form_for (:query, url: index_path, method: :get
+                              ^
+/home/andrew/workspace/ahobooru/app/views/static_pages/home.html.erb:10: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/static_pages/home.html.erb:3: syntax error, unexpected ',', expecting ')'
+app/views/static_pages/home.html.erb:10: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/" for 127.0.0.1 at 2017-10-23 21:19:47 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (79.7ms)
+Completed 200 OK in 103ms (Views: 101.4ms)
+
+
+Started GET "/index?utf8=%E2%9C%93&query%5Bquery%5D=dana+scully&commit=Search" for 127.0.0.1 at 2017-10-23 21:19:54 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>{"query"=>"dana scully"}, "commit"=>"Search"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 64ms (Views: 41.5ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-23 21:20:42 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 28ms (Views: 26.4ms)
+
+
+Started GET "/index?utf8=%E2%9C%93&search_query%5Bsearch_query%5D=dana&commit=Search" for 127.0.0.1 at 2017-10-23 21:20:46 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_query"=>{"search_query"=>"dana"}, "commit"=>"Search"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 63ms (Views: 42.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/index?utf8=%E2%9C%93&search_query%5Bsearch_query%5D=dana&commit=Search" for 127.0.0.1 at 2017-10-23 21:22:19 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_query"=>{"search_query"=>"dana"}, "commit"=>"Search"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 49ms (Views: 32.7ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/index?q=dana" for 127.0.0.1 at 2017-10-23 21:26:12 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"q"=>"dana"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 50ms (Views: 33.6ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/index?utf8=%E2%9C%93&search_query%5Bsearch_query%5D=dana&commit=Search" for 127.0.0.1 at 2017-10-23 22:07:57 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"utf8"=>"✓", "search_query"=>{"search_query"=>"dana"}, "commit"=>"Search"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 28ms (Views: 25.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-23 22:08:00 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/andrew/workspace/ahobooru/app/views/static_pages/home.html.erb:4: syntax error, unexpected ')', expecting =>
+holder: "search", params[:q] );@output_buffer.safe_append='
+                              ^
+/home/andrew/workspace/ahobooru/app/views/static_pages/home.html.erb:6: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;   end 
+               ^
+/home/andrew/workspace/ahobooru/app/views/static_pages/home.html.erb:10: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/home/andrew/workspace/ahobooru/app/views/static_pages/home.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/static_pages/home.html.erb:4: syntax error, unexpected ')', expecting =>
+app/views/static_pages/home.html.erb:6: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/home.html.erb:10: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/static_pages/home.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2017-10-23 22:08:34 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/andrew/workspace/ahobooru/app/views/static_pages/home.html.erb:4: syntax error, unexpected ')', expecting =>
+holder: "search", params[:q] );@output_buffer.safe_append='
+                              ^
+/home/andrew/workspace/ahobooru/app/views/static_pages/home.html.erb:6: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;   end 
+               ^
+/home/andrew/workspace/ahobooru/app/views/static_pages/home.html.erb:10: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/home/andrew/workspace/ahobooru/app/views/static_pages/home.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/static_pages/home.html.erb:4: syntax error, unexpected ')', expecting =>
+app/views/static_pages/home.html.erb:6: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/home.html.erb:10: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/static_pages/home.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2017-10-23 22:11:50 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (1.2ms)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/andrew/workspace/ahobooru/app/views/static_pages/home.html.erb:4: syntax error, unexpected ')', expecting =>
+holder: "search", params[:q] );@output_buffer.safe_append='
+                              ^
+/home/andrew/workspace/ahobooru/app/views/static_pages/home.html.erb:6: syntax error, unexpected keyword_end, expecting ')'
+'.freeze;   end 
+               ^
+/home/andrew/workspace/ahobooru/app/views/static_pages/home.html.erb:10: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+                ^
+/home/andrew/workspace/ahobooru/app/views/static_pages/home.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+          end
+             ^):
+  
+app/views/static_pages/home.html.erb:4: syntax error, unexpected ')', expecting =>
+app/views/static_pages/home.html.erb:6: syntax error, unexpected keyword_end, expecting ')'
+app/views/static_pages/home.html.erb:10: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/static_pages/home.html.erb:12: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2017-10-23 22:11:57 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (15.0ms)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `model_name' for {:controller=>:posts, :action=>:index, :method=>:get}:Hash):
+    1: <div class="home-container">
+    2:   <%= image_tag "logo.png", class: "home-logo" %>
+    3:   <%= form_for(controller: :posts, action: :index, method: :get) do |f| %>
+    4:     <%= f.text_field :q, class: "home-search-box", placeholder: "search" %>
+    5:     <%= f.submit "Search" %>
+    6:   <% end %>
+  
+app/views/static_pages/home.html.erb:3:in `_app_views_static_pages_home_html_erb__751271001763658446_28564700'
+Started GET "/" for 127.0.0.1 at 2017-10-23 22:12:20 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 33ms (Views: 31.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&q%5Bq%5D=ddd&commit=Search" for 127.0.0.1 at 2017-10-23 22:12:22 +0200
+Processing by StaticPagesController#home as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"q"=>"ddd"}, "commit"=>"Search"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 36ms (Views: 34.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&q%5Bq%5D=ddd&commit=Search" for 127.0.0.1 at 2017-10-23 22:18:44 +0200
+Processing by StaticPagesController#home as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"q"=>"ddd"}, "commit"=>"Search"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (unable to convert unpermitted parameters to hash):
+    1: <div class="home-container">
+    2:   <%= image_tag "logo.png", class: "home-logo" %>
+    3:   <%= form_for index_path, method: :get do |f| %>
+    4:     <%= f.text_field :q, params[:q] %>
+    5:     <%= f.submit "Search" %>
+    6:   <% end %>
+    7: </div>
+  
+app/views/static_pages/home.html.erb:4:in `block in _app_views_static_pages_home_html_erb__751271001763658446_69963309135860'
+app/views/static_pages/home.html.erb:3:in `_app_views_static_pages_home_html_erb__751271001763658446_69963309135860'
+Started GET "/" for 127.0.0.1 at 2017-10-23 22:19:17 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (5.8ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `permit!' for nil:NilClass):
+    1: <div class="home-container">
+    2:   <%= image_tag "logo.png", class: "home-logo" %>
+    3:   <%= form_for index_path, method: :get do |f| %>
+    4:     <%= f.text_field :q, params[:q].permit! %>
+    5:     <%= f.submit "Search" %>
+    6:   <% end %>
+    7: </div>
+  
+app/views/static_pages/home.html.erb:4:in `block in _app_views_static_pages_home_html_erb__751271001763658446_69963413839480'
+app/views/static_pages/home.html.erb:3:in `_app_views_static_pages_home_html_erb__751271001763658446_69963413839480'
+Started GET "/" for 127.0.0.1 at 2017-10-23 22:19:21 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (4.7ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `merge' for nil:NilClass):
+    1: <div class="home-container">
+    2:   <%= image_tag "logo.png", class: "home-logo" %>
+    3:   <%= form_for index_path, method: :get do |f| %>
+    4:     <%= f.text_field :q, params[:q] %>
+    5:     <%= f.submit "Search" %>
+    6:   <% end %>
+    7: </div>
+  
+app/views/static_pages/home.html.erb:4:in `block in _app_views_static_pages_home_html_erb__751271001763658446_69963373185800'
+app/views/static_pages/home.html.erb:3:in `_app_views_static_pages_home_html_erb__751271001763658446_69963373185800'
+Started GET "/" for 127.0.0.1 at 2017-10-23 22:20:21 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 28ms (Views: 26.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&%2Findex%5Bq%5D=amoeba&commit=Search" for 127.0.0.1 at 2017-10-23 22:20:24 +0200
+Processing by StaticPagesController#home as HTML
+  Parameters: {"utf8"=>"✓", "/index"=>{"q"=>"amoeba"}, "commit"=>"Search"}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 28ms (Views: 26.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-23 22:20:58 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 31ms (Views: 29.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/?utf8=%E2%9C%93&%2Findex%5Bq%5D=amoeba" for 127.0.0.1 at 2017-10-23 22:21:00 +0200
+Processing by StaticPagesController#home as HTML
+  Parameters: {"utf8"=>"✓", "/index"=>{"q"=>"amoeba"}}
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 43ms (Views: 41.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-23 22:21:41 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 26ms (Views: 24.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index?utf8=%E2%9C%93&q%5B%5D=nigga" for 127.0.0.1 at 2017-10-23 22:21:44 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>["nigga"]}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 27ms (Views: 24.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 08:50:45 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 29ms (Views: 27.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index?utf8=%E2%9C%93&q%5B%5D=sooqa" for 127.0.0.1 at 2017-10-24 08:50:48 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>["sooqa"]}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 25ms (Views: 24.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 08:52:47 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 31ms (Views: 29.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts?utf8=%E2%9C%93&q%5B%5D=sooqa" for 127.0.0.1 at 2017-10-24 08:52:50 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>["sooqa"]}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 34ms (Views: 32.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts?utf8=%E2%9C%93&q%5B%5D=sooqa" for 127.0.0.1 at 2017-10-24 08:58:06 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>["sooqa"]}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 34ms (Views: 32.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 09:10:53 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 39ms (Views: 37.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts?utf8=%E2%9C%93&q%5B%5D=yobana" for 127.0.0.1 at 2017-10-24 09:10:57 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>["yobana"]}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 41ms (Views: 38.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 09:15:15 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 26ms (Views: 24.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts?utf8=%E2%9C%93&q%5B%5D=is+it+okay" for 127.0.0.1 at 2017-10-24 09:15:20 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>["is it okay"]}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 09:15:43 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 2..3)):
+    1: <div class="home-container">
+    2:   <%= image_tag "logo.png", class: "home-logo" %>
+    3:   <%= form_tag posts_path, method: :get do %>
+    4:     <%= text_field :q %>
+    5:     <%= submit_tag "Search", name: nil %>
+    6:   <% end %>
+    7: </div>
+  
+app/views/static_pages/home.html.erb:4:in `block in _app_views_static_pages_home_html_erb__751271001763658446_69963416131460'
+app/views/static_pages/home.html.erb:3:in `_app_views_static_pages_home_html_erb__751271001763658446_69963416131460'
+Started GET "/" for 127.0.0.1 at 2017-10-24 09:16:57 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 30ms (Views: 28.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts?utf8=%E2%9C%93&q%5B%5D=howw_is_this" for 127.0.0.1 at 2017-10-24 09:17:06 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>["howw_is_this"]}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 30ms (Views: 28.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 09:17:49 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 35ms (Views: 33.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts?utf8=%E2%9C%93&q%5B%5D=qury" for 127.0.0.1 at 2017-10-24 17:22:26 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>["qury"]}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 27ms (Views: 25.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 17:24:22 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 26ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts?utf8=%E2%9C%93&q%5Bq%5D=qdada" for 127.0.0.1 at 2017-10-24 17:24:25 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"q"=>"qdada"}}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 26ms (Views: 24.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 17:24:58 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 29ms (Views: 27.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts?utf8=%E2%9C%93&query%5B%5D=ddd" for 127.0.0.1 at 2017-10-24 17:25:02 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"utf8"=>"✓", "query"=>["ddd"]}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 40ms (Views: 29.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 17:26:14 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 26ms (Views: 24.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts?utf8=%E2%9C%93&q%5Bquery%5D=ddd" for 127.0.0.1 at 2017-10-24 17:26:18 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"query"=>"ddd"}}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 33ms (Views: 30.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts?utf8=%E2%9C%93&q%5Bquery%5D=ddd" for 127.0.0.1 at 2017-10-24 17:26:23 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>{"query"=>"ddd"}}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 25ms (Views: 23.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts?utf8=%E2%9C%93&q=ddd" for 127.0.0.1 at 2017-10-24 17:26:26 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"ddd"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 34ms (Views: 31.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 17:26:30 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 41ms (Views: 39.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts?utf8=%E2%9C%93&q%5B%5D=dasda" for 127.0.0.1 at 2017-10-24 17:26:34 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>["dasda"]}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 49ms (Views: 46.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts?utf8=%E2%9C%93&q%5B%5D=whatever" for 127.0.0.1 at 2017-10-24 17:28:06 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>["whatever"]}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 35ms (Views: 32.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 17:32:37 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 37ms (Views: 34.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts?utf8=%E2%9C%93&q=dad" for 127.0.0.1 at 2017-10-24 17:32:40 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"dad"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 27ms (Views: 24.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts?utf8=%E2%9C%97&q=dad" for 127.0.0.1 at 2017-10-24 17:33:27 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"utf8"=>"✗", "q"=>"dad"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 36ms (Views: 34.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 17:34:42 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 31ms (Views: 29.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 17:35:03 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 32ms (Views: 29.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 17:35:06 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 27ms (Views: 25.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 17:35:57 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 28ms (Views: 27.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 17:36:11 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 26ms (Views: 25.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts?utf8=%E2%9C%93&q=short_hair" for 127.0.0.1 at 2017-10-24 17:36:55 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"short_hair"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 33ms (Views: 31.0ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Load (0.3ms)[0m  [1m[34mSELECT "taggings".* FROM "taggings" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ?[0m  [["taggable_id", 1], ["taggable_type", "Post"]]
+  [1m[36mActsAsTaggableOn::Tag Load (13.5ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 1], ["taggable_type", "Post"]]
+Started GET "/posts?utf8=%E2%9C%93&q=short_hair" for 127.0.0.1 at 2017-10-24 17:38:54 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"short_hair"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 27ms (Views: 24.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts?utf8=%E2%9C%93&q=" for 127.0.0.1 at 2017-10-24 17:39:34 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>""}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 30ms (Views: 28.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 17:39:46 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 40ms (Views: 37.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 17:40:49 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 40ms (Views: 38.1ms)
+
+
+Started GET "/posts?utf8=%E2%9C%93&q=dress+short_hair+red_hair" for 127.0.0.1 at 2017-10-24 17:41:04 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"dress short_hair red_hair"}
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 7ms
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    1: <% @posts.each do |post| %>
+    2:   <%= post.title %>
+    3: <% end %>
+  
+app/views/posts/index.html.erb:1:in `_app_views_posts_index_html_erb___2391555840130574132_69963417008960'
+Started GET "/posts?utf8=%E2%9C%93&q=dress+short_hair+red_hair" for 127.0.0.1 at 2017-10-24 17:44:06 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"dress short_hair red_hair"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" INNER JOIN "taggings" "post_taggings_9dbfbe4" ON "post_taggings_9dbfbe4"."taggable_id" = "posts"."id" AND "post_taggings_9dbfbe4"."taggable_type" = 'Post' AND "post_taggings_9dbfbe4"."tag_id" IN (SELECT "tags"."id" FROM "tags" WHERE "tags"."name" LIKE 'dress' ESCAPE '!') INNER JOIN "taggings" "post_taggings_56168aa" ON "post_taggings_56168aa"."taggable_id" = "posts"."id" AND "post_taggings_56168aa"."taggable_type" = 'Post' AND "post_taggings_56168aa"."tag_id" IN (SELECT "tags"."id" FROM "tags" WHERE "tags"."name" LIKE 'short!_hair' ESCAPE '!') INNER JOIN "taggings" "post_taggings_87b6094" ON "post_taggings_87b6094"."taggable_id" = "posts"."id" AND "post_taggings_87b6094"."taggable_type" = 'Post' AND "post_taggings_87b6094"."tag_id" IN (SELECT "tags"."id" FROM "tags" WHERE "tags"."name" LIKE 'red!_hair' ESCAPE '!')[0m
+  Rendered posts/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 78ms (Views: 33.3ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/posts?utf8=%E2%9C%93&q=it%27s+dana+scully" for 127.0.0.1 at 2017-10-24 17:44:15 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"it's dana scully"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts" INNER JOIN "taggings" "post_taggings_79bbc53" ON "post_taggings_79bbc53"."taggable_id" = "posts"."id" AND "post_taggings_79bbc53"."taggable_type" = 'Post' AND "post_taggings_79bbc53"."tag_id" IN (SELECT "tags"."id" FROM "tags" WHERE "tags"."name" LIKE 'it''s' ESCAPE '!') INNER JOIN "taggings" "post_taggings_1cb9708" ON "post_taggings_1cb9708"."taggable_id" = "posts"."id" AND "post_taggings_1cb9708"."taggable_type" = 'Post' AND "post_taggings_1cb9708"."tag_id" IN (SELECT "tags"."id" FROM "tags" WHERE "tags"."name" LIKE 'dana' ESCAPE '!') INNER JOIN "taggings" "post_taggings_efad4f9" ON "post_taggings_efad4f9"."taggable_id" = "posts"."id" AND "post_taggings_efad4f9"."taggable_type" = 'Post' AND "post_taggings_efad4f9"."tag_id" IN (SELECT "tags"."id" FROM "tags" WHERE "tags"."name" LIKE 'scully' ESCAPE '!')[0m
+  Rendered posts/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 28ms (Views: 26.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts?utf8=%E2%9C%93&q=its+dana+scully" for 127.0.0.1 at 2017-10-24 17:44:18 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"its dana scully"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.7ms)[0m  [1m[34mSELECT "posts".* FROM "posts" INNER JOIN "taggings" "post_taggings_f803b26" ON "post_taggings_f803b26"."taggable_id" = "posts"."id" AND "post_taggings_f803b26"."taggable_type" = 'Post' AND "post_taggings_f803b26"."tag_id" IN (SELECT "tags"."id" FROM "tags" WHERE "tags"."name" LIKE 'its' ESCAPE '!') INNER JOIN "taggings" "post_taggings_1cb9708" ON "post_taggings_1cb9708"."taggable_id" = "posts"."id" AND "post_taggings_1cb9708"."taggable_type" = 'Post' AND "post_taggings_1cb9708"."tag_id" IN (SELECT "tags"."id" FROM "tags" WHERE "tags"."name" LIKE 'dana' ESCAPE '!') INNER JOIN "taggings" "post_taggings_efad4f9" ON "post_taggings_efad4f9"."taggable_id" = "posts"."id" AND "post_taggings_efad4f9"."taggable_type" = 'Post' AND "post_taggings_efad4f9"."tag_id" IN (SELECT "tags"."id" FROM "tags" WHERE "tags"."name" LIKE 'scully' ESCAPE '!')[0m
+  Rendered posts/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 49ms (Views: 35.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/posts?utf8=%E2%9C%93&q=its_dana_scully" for 127.0.0.1 at 2017-10-24 17:44:37 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"its_dana_scully"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" INNER JOIN "taggings" "post_taggings_e27426d" ON "post_taggings_e27426d"."taggable_id" = "posts"."id" AND "post_taggings_e27426d"."taggable_type" = 'Post' AND "post_taggings_e27426d"."tag_id" IN (SELECT "tags"."id" FROM "tags" WHERE "tags"."name" LIKE 'its!_dana!_scully' ESCAPE '!')[0m
+  Rendered posts/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 33ms (Views: 30.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts?utf8=%E2%9C%93&q=its_dana_scully" for 127.0.0.1 at 2017-10-24 21:15:44 +0200
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"its_dana_scully"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" INNER JOIN "taggings" "post_taggings_e27426d" ON "post_taggings_e27426d"."taggable_id" = "posts"."id" AND "post_taggings_e27426d"."taggable_type" = 'Post' AND "post_taggings_e27426d"."tag_id" IN (SELECT "tags"."id" FROM "tags" WHERE "tags"."name" LIKE 'its!_dana!_scully' ESCAPE '!')[0m
+  Rendered posts/index.html.erb within layouts/application (61.2ms)
+Completed 200 OK in 1394ms (Views: 1096.2ms | ActiveRecord: 4.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 21:15:49 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (60.9ms)
+Completed 200 OK in 110ms (Views: 95.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 21:16:25 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 27ms (Views: 25.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 21:16:33 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 27ms (Views: 25.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 21:16:53 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 28ms (Views: 27.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/index?utf8=%E2%9C%93&q=dana" for 127.0.0.1 at 2017-10-24 21:16:57 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"dana"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" INNER JOIN "taggings" "post_taggings_1cb9708" ON "post_taggings_1cb9708"."taggable_id" = "posts"."id" AND "post_taggings_1cb9708"."taggable_type" = 'Post' AND "post_taggings_1cb9708"."tag_id" IN (SELECT "tags"."id" FROM "tags" WHERE "tags"."name" LIKE 'dana' ESCAPE '!')[0m
+  Rendered posts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 25ms (Views: 22.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/index?utf8=%E2%9C%93&q=ddd" for 127.0.0.1 at 2017-10-24 21:17:26 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/index?utf8=%E2%9C%93&q=ddd" for 127.0.0.1 at 2017-10-24 21:17:48 +0200
+  
+ActionController::RoutingError (No route matches [GET] "/index"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.10.0) lib/puma/configuration.rb:225:in `call'
+puma (3.10.0) lib/puma/server.rb:605:in `handle_request'
+puma (3.10.0) lib/puma/server.rb:437:in `process_client'
+puma (3.10.0) lib/puma/server.rb:301:in `block in run'
+puma (3.10.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2017-10-24 21:17:55 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 33ms (Views: 32.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 21:17:57 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (12.4ms)
+Completed 200 OK in 65ms (Views: 43.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 21:19:14 +0200
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (745.3ms)
+Completed 200 OK in 831ms (Views: 817.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 21:19:17 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 32ms (Views: 29.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 21:20:03 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.5ms)
+Completed 500 Internal Server Error in 506ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (File to import not found or unreadable: pure-extras.
+Load paths:
+  /home/andrew/workspace/ahobooru/app/assets/config
+  /home/andrew/workspace/ahobooru/app/assets/images
+  /home/andrew/workspace/ahobooru/app/assets/javascripts
+  /home/andrew/workspace/ahobooru/app/assets/stylesheets
+  /home/andrew/.rvm/gems/ruby-2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/andrew/.rvm/gems/ruby-2.4.0/gems/purecss-sass-1.0.0/vendor/assets/stylesheets
+  /home/andrew/.rvm/gems/ruby-2.4.0/gems/cloudinary-1.8.1/vendor/assets/html
+  /home/andrew/.rvm/gems/ruby-2.4.0/gems/cloudinary-1.8.1/vendor/assets/javascripts
+  /home/andrew/.rvm/gems/ruby-2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /home/andrew/.rvm/gems/ruby-2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /home/andrew/.rvm/gems/ruby-2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /home/andrew/workspace/ahobooru/node_modules
+  /home/andrew/.rvm/gems/ruby-2.4.0/gems/purecss-sass-1.0.0/vendor/assets/stylesheets
+  /home/andrew/.rvm/gems/ruby-2.4.0/gems/purecss-sass-1.0.0/vendor/assets/stylesheets):
+    4:     <title>Ahobooru</title>
+    5:     <%= csrf_meta_tags %>
+    6: 
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    9:   </head>
+   10: 
+  
+app/assets/stylesheets/application.scss:17
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb___2689261887451811448_69907337680780'
+Started GET "/" for 127.0.0.1 at 2017-10-24 21:20:23 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 431ms (Views: 429.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 21:21:08 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 295ms (Views: 294.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 21:21:24 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 298ms (Views: 296.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 21:21:27 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 114ms (Views: 45.0ms | ActiveRecord: 1.3ms)
+
+
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35mSQL (75.6ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 1]]
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 21:24:54 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 42ms (Views: 39.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2017-10-24 21:25:44 +0200
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (97.9ms)
+Completed 200 OK in 139ms (Views: 120.0ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2017-10-24 21:31:19 +0200
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"TxbWvFGh/+htK1rEtv+54cuDh4S4LuqcBsNddv1O+KT91gJU/1f6LS3Jpio1uO9jKqFtCdpUI7Wf577rKQ5nTw==", "post"=>{"title"=>"bang dream", "tag_list"=>"short hair, shirt, skirt, brown hair, glasses, green eyes, white shirt, 1girl", "picture_cache"=>"", "picture"=>#<ActionDispatch::Http::UploadedFile:0x007f29246597b8 @tempfile=#<Tempfile:/tmp/RackMultipart20171024-3362-17d3smt.jpeg>, @original_filename="1e96767b702b30ec8c4a42f593e5635e.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"post[picture]\"; filename=\"1e96767b702b30ec8c4a42f593e5635e.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"save"}
+Unpermitted parameter: :picture_cache
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "created_at", "updated_at", "picture") VALUES (?, ?, ?, ?)[0m  [["title", "bang dream"], ["created_at", "2017-10-24 19:31:19.408017"], ["updated_at", "2017-10-24 19:31:19.408017"], ["picture", "iwbv0vzywaag6p7u9edt.jpeg"]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "posts" SET "picture" = 'image/upload/v1508873501/iwbv0vzywaag6p7u9edt.jpg' WHERE "posts"."id" = ?[0m  [["id", 2]]
+DEPRECATION WARNING: The behavior of `changed_attributes` inside of after callbacks will be changing in the next version of Rails. The new return value will reflect the behavior of calling the method after `save` returned (e.g. the opposite of what it returns now). To maintain the current behavior, use `saved_changes.transform_values(&:first)` instead. (called from format_tags at /home/andrew/workspace/ahobooru/app/models/post.rb:14)
+DEPRECATION WARNING: The behavior of `changed_attributes` inside of after callbacks will be changing in the next version of Rails. The new return value will reflect the behavior of calling the method after `save` returned (e.g. the opposite of what it returns now). To maintain the current behavior, use `saved_changes.transform_values(&:first)` instead. (called from format_tags at /home/andrew/workspace/ahobooru/app/models/post.rb:14)
+  [1m[36mActsAsTaggableOn::Tag Load (0.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('shorthair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brownhair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('greeneyes') OR LOWER(name) = LOWER('whiteshirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mActsAsTaggableOn::Tag Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "tags" WHERE "tags"."name" = ? LIMIT ?[0m  [["name", "shorthair"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "tags" ("name") VALUES (?)[0m  [["name", "shorthair"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.4ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('shorthair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brownhair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('greeneyes') OR LOWER(name) = LOWER('whiteshirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mActsAsTaggableOn::Tag Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "tags" WHERE "tags"."name" = ? LIMIT ?[0m  [["name", "shirt"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "tags" ("name") VALUES (?)[0m  [["name", "shirt"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('shorthair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brownhair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('greeneyes') OR LOWER(name) = LOWER('whiteshirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mActsAsTaggableOn::Tag Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "tags" WHERE "tags"."name" = ? LIMIT ?[0m  [["name", "skirt"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "tags" ("name") VALUES (?)[0m  [["name", "skirt"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('shorthair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brownhair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('greeneyes') OR LOWER(name) = LOWER('whiteshirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mActsAsTaggableOn::Tag Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "tags" WHERE "tags"."name" = ? LIMIT ?[0m  [["name", "brownhair"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "tags" ("name") VALUES (?)[0m  [["name", "brownhair"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('shorthair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brownhair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('greeneyes') OR LOWER(name) = LOWER('whiteshirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mActsAsTaggableOn::Tag Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "tags" WHERE "tags"."name" = ? LIMIT ?[0m  [["name", "glasses"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "tags" ("name") VALUES (?)[0m  [["name", "glasses"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('shorthair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brownhair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('greeneyes') OR LOWER(name) = LOWER('whiteshirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mActsAsTaggableOn::Tag Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "tags" WHERE "tags"."name" = ? LIMIT ?[0m  [["name", "greeneyes"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "tags" ("name") VALUES (?)[0m  [["name", "greeneyes"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('shorthair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brownhair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('greeneyes') OR LOWER(name) = LOWER('whiteshirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mActsAsTaggableOn::Tag Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "tags" WHERE "tags"."name" = ? LIMIT ?[0m  [["name", "whiteshirt"], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "tags" ("name") VALUES (?)[0m  [["name", "whiteshirt"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('shorthair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brownhair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('greeneyes') OR LOWER(name) = LOWER('whiteshirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mActsAsTaggableOn::Tag Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "tags" WHERE "tags"."name" = ? LIMIT ?[0m  [["name", "1girl"], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "tags" ("name") VALUES (?)[0m  [["name", "1girl"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.3ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 2], ["taggable_type", "Post"], ["taggable_id", 2], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 2], ["taggable_type", "Post"], ["taggable_id", 2], ["context", "tags"], ["created_at", "2017-10-24 19:31:21.716860"]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 3], ["taggable_type", "Post"], ["taggable_id", 2], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 3], ["taggable_type", "Post"], ["taggable_id", 2], ["context", "tags"], ["created_at", "2017-10-24 19:31:21.726269"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 3]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 4], ["taggable_type", "Post"], ["taggable_id", 2], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 4], ["taggable_type", "Post"], ["taggable_id", 2], ["context", "tags"], ["created_at", "2017-10-24 19:31:21.732157"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 4]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 5], ["taggable_type", "Post"], ["taggable_id", 2], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 5], ["taggable_type", "Post"], ["taggable_id", 2], ["context", "tags"], ["created_at", "2017-10-24 19:31:21.738490"]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 5]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 6], ["taggable_type", "Post"], ["taggable_id", 2], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 6], ["taggable_type", "Post"], ["taggable_id", 2], ["context", "tags"], ["created_at", "2017-10-24 19:31:21.745284"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 6]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 7], ["taggable_type", "Post"], ["taggable_id", 2], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 7], ["taggable_type", "Post"], ["taggable_id", 2], ["context", "tags"], ["created_at", "2017-10-24 19:31:21.751097"]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 7]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 8], ["taggable_type", "Post"], ["taggable_id", 2], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 8], ["taggable_type", "Post"], ["taggable_id", 2], ["context", "tags"], ["created_at", "2017-10-24 19:31:21.757607"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 8]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 9], ["taggable_type", "Post"], ["taggable_id", 2], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 9], ["taggable_type", "Post"], ["taggable_id", 2], ["context", "tags"], ["created_at", "2017-10-24 19:31:21.763555"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 9]]
+  [1m[35m (85.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/posts/2
+Completed 302 Found in 2453ms (ActiveRecord: 97.5ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2017-10-24 21:31:21 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 64ms (Views: 26.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/" for 127.0.0.1 at 2017-10-24 21:31:28 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 33ms (Views: 30.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/" for 127.0.0.1 at 2017-10-24 21:36:34 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 25ms (Views: 23.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 21:36:36 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 25ms (Views: 23.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 21:36:39 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 35ms (Views: 32.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 21:37:17 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 26ms (Views: 23.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 21:37:18 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 26ms (Views: 24.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 21:37:20 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 26ms (Views: 24.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 21:37:22 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 31ms (Views: 29.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 21:37:48 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 21:38:01 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 26ms (Views: 23.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 21:39:57 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 27ms (Views: 25.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 21:40:00 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 26ms (Views: 24.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 21:40:13 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 29ms (Views: 26.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 21:40:15 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 49ms (Views: 36.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 21:40:21 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 27ms (Views: 24.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:17:38 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 24ms (Views: 23.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 22:18:12 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 28ms (Views: 27.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:19:16 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 25ms (Views: 22.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:20:05 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 286ms (Views: 284.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:20:12 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 293ms (Views: 290.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:21:10 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 368ms (Views: 366.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:22:51 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 24ms (Views: 22.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:23:40 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 23ms (Views: 21.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:24:30 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:25:34 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 27ms (Views: 25.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:25:46 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 24ms (Views: 22.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:26:51 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 28ms (Views: 25.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:27:34 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 34ms (Views: 32.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:28:37 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 33ms (Views: 30.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:29:17 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 295ms (Views: 292.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:29:35 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 316ms (Views: 314.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:29:44 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 339ms (Views: 337.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:30:17 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 299ms (Views: 297.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:31:13 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 361ms (Views: 358.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:31:29 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 309ms (Views: 306.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:31:35 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 290ms (Views: 288.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:31:44 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 294ms (Views: 292.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:32:05 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 296ms (Views: 294.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:32:31 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 300ms (Views: 298.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:32:43 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 294ms (Views: 291.3ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:32:49 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 347ms (Views: 344.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:33:02 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 29ms (Views: 26.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:33:13 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 363ms (Views: 360.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:33:30 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 311ms (Views: 308.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:33:39 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 27ms (Views: 25.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:34:14 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 289ms (Views: 286.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:34:27 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 291ms (Views: 289.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:34:33 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 299ms (Views: 297.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:34:50 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 287ms (Views: 284.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:35:00 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 308ms (Views: 305.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:35:11 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 281ms (Views: 279.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:35:39 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 309ms (Views: 307.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-10-24 22:35:43 +0200
+Processing by StaticPagesController#home as HTML
+  Rendering static_pages/home.html.erb within layouts/application
+  Rendered static_pages/home.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 35ms (Views: 33.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:35:46 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 39ms (Views: 36.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:36:02 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 22ms (Views: 20.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:37:27 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 306ms (Views: 303.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:38:03 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 25ms (Views: 23.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:39:11 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 299ms (Views: 297.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:41:28 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 293ms (Views: 290.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:41:44 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 318ms (Views: 316.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:42:16 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 289ms (Views: 287.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:42:28 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 318ms (Views: 315.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:42:54 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 27ms (Views: 24.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts/2" for 127.0.0.1 at 2017-10-24 22:42:56 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 35ms (Views: 32.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts?utf8=%E2%9C%93&q=yopta" for 127.0.0.1 at 2017-10-24 22:43:10 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"yopta"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" INNER JOIN "taggings" "post_taggings_acb0021" ON "post_taggings_acb0021"."taggable_id" = "posts"."id" AND "post_taggings_acb0021"."taggable_type" = 'Post' AND "post_taggings_acb0021"."tag_id" IN (SELECT "tags"."id" FROM "tags" WHERE "tags"."name" LIKE 'yopta' ESCAPE '!')[0m
+  Rendered posts/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 26ms (Views: 23.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/posts?utf8=%E2%9C%93&q=short_hair" for 127.0.0.1 at 2017-10-24 22:43:16 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"short_hair"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" INNER JOIN "taggings" "post_taggings_56168aa" ON "post_taggings_56168aa"."taggable_id" = "posts"."id" AND "post_taggings_56168aa"."taggable_type" = 'Post' AND "post_taggings_56168aa"."tag_id" IN (SELECT "tags"."id" FROM "tags" WHERE "tags"."name" LIKE 'short!_hair' ESCAPE '!')[0m
+  Rendered posts/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 30ms (Views: 27.4ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Load (0.4ms)[0m  [1m[34mSELECT "taggings".* FROM "taggings" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ?[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.5ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+Started GET "/posts?utf8=%E2%9C%93&q=shorthair" for 127.0.0.1 at 2017-10-24 22:44:09 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"shorthair"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" INNER JOIN "taggings" "post_taggings_594a785" ON "post_taggings_594a785"."taggable_id" = "posts"."id" AND "post_taggings_594a785"."taggable_type" = 'Post' AND "post_taggings_594a785"."tag_id" IN (SELECT "tags"."id" FROM "tags" WHERE "tags"."name" LIKE 'shorthair' ESCAPE '!')[0m
+  Rendered posts/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 28ms (Views: 25.4ms | ActiveRecord: 0.5ms)
+
+
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActsAsTaggableOn::Tagging Load (0.4ms)[0m  [1m[34mSELECT "taggings".* FROM "taggings" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ?[0m  [["taggable_id", 2], ["taggable_type", "Post"]]
+  [1m[35mSQL (2.1ms)[0m  [1m[31mDELETE FROM "taggings" WHERE "taggings"."id" = ?[0m  [["id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) - 1 WHERE "tags"."id" = ?[0m  [["id", 2]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "taggings" WHERE "taggings"."id" = ?[0m  [["id", 3]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) - 1 WHERE "tags"."id" = ?[0m  [["id", 3]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "taggings" WHERE "taggings"."id" = ?[0m  [["id", 4]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) - 1 WHERE "tags"."id" = ?[0m  [["id", 4]]
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "taggings" WHERE "taggings"."id" = ?[0m  [["id", 5]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) - 1 WHERE "tags"."id" = ?[0m  [["id", 5]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "taggings" WHERE "taggings"."id" = ?[0m  [["id", 6]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) - 1 WHERE "tags"."id" = ?[0m  [["id", 6]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "taggings" WHERE "taggings"."id" = ?[0m  [["id", 7]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) - 1 WHERE "tags"."id" = ?[0m  [["id", 7]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "taggings" WHERE "taggings"."id" = ?[0m  [["id", 8]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) - 1 WHERE "tags"."id" = ?[0m  [["id", 8]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "taggings" WHERE "taggings"."id" = ?[0m  [["id", 9]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) - 1 WHERE "tags"."id" = ?[0m  [["id", 9]]
+  [1m[36mActsAsTaggableOn::Tagging Load (0.2ms)[0m  [1m[34mSELECT "taggings".* FROM "taggings" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."context" = ?[0m  [["taggable_id", 2], ["taggable_type", "Post"], ["context", "tags"]]
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 2]]
+  [1m[35m (85.7ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/posts?utf8=%E2%9C%93&q=shorthair" for 127.0.0.1 at 2017-10-24 22:45:08 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"shorthair"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.5ms)[0m  [1m[34mSELECT "posts".* FROM "posts" INNER JOIN "taggings" "post_taggings_594a785" ON "post_taggings_594a785"."taggable_id" = "posts"."id" AND "post_taggings_594a785"."taggable_type" = 'Post' AND "post_taggings_594a785"."tag_id" IN (SELECT "tags"."id" FROM "tags" WHERE "tags"."name" LIKE 'shorthair' ESCAPE '!')[0m
+  Rendered posts/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 43ms (Views: 22.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2017-10-24 22:45:24 +0200
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 54ms (Views: 40.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2017-10-24 22:46:04 +0200
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HwWlOeqsHA4k1hfsMjLvIv/Co5SvxslRK/ZKaoWCwHqtxXHRRFoZy2Q06wKxdbmgHuBJGc28AHiy0qn3UcJfkQ==", "post"=>{"title"=>"bang dream", "tag_list"=>"short hair, shirt, skirt, brown hair, glasses, green eyes, white shirt, 1girl", "picture_cache"=>"", "picture"=>#<ActionDispatch::Http::UploadedFile:0x007f2924a7e0f0 @tempfile=#<Tempfile:/tmp/RackMultipart20171024-3362-5ldlgo.jpeg>, @original_filename="1e96767b702b30ec8c4a42f593e5635e.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"post[picture]\"; filename=\"1e96767b702b30ec8c4a42f593e5635e.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"save"}
+Unpermitted parameter: :picture_cache
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.2ms)[0m  [1m[32mINSERT INTO "posts" ("title", "created_at", "updated_at", "picture") VALUES (?, ?, ?, ?)[0m  [["title", "bang dream"], ["created_at", "2017-10-24 20:46:04.809762"], ["updated_at", "2017-10-24 20:46:04.809762"], ["picture", "w2mfunqyxkvseoeqkrea.jpeg"]]
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "posts" SET "picture" = 'image/upload/v1508877986/w2mfunqyxkvseoeqkrea.jpg' WHERE "posts"."id" = ?[0m  [["id", 3]]
+DEPRECATION WARNING: The behavior of `changed_attributes` inside of after callbacks will be changing in the next version of Rails. The new return value will reflect the behavior of calling the method after `save` returned (e.g. the opposite of what it returns now). To maintain the current behavior, use `saved_changes.transform_values(&:first)` instead. (called from format_tags at /home/andrew/workspace/ahobooru/app/models/post.rb:14)
+DEPRECATION WARNING: The behavior of `changed_attributes` inside of after callbacks will be changing in the next version of Rails. The new return value will reflect the behavior of calling the method after `save` returned (e.g. the opposite of what it returns now). To maintain the current behavior, use `saved_changes.transform_values(&:first)` instead. (called from format_tags at /home/andrew/workspace/ahobooru/app/models/post.rb:14)
+  [1m[36mActsAsTaggableOn::Tag Load (0.7ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('shorthair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brownhair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('greeneyes') OR LOWER(name) = LOWER('whiteshirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mCACHE ActsAsTaggableOn::Tag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('shorthair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brownhair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('greeneyes') OR LOWER(name) = LOWER('whiteshirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mCACHE ActsAsTaggableOn::Tag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('shorthair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brownhair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('greeneyes') OR LOWER(name) = LOWER('whiteshirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mCACHE ActsAsTaggableOn::Tag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('shorthair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brownhair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('greeneyes') OR LOWER(name) = LOWER('whiteshirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mCACHE ActsAsTaggableOn::Tag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('shorthair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brownhair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('greeneyes') OR LOWER(name) = LOWER('whiteshirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mCACHE ActsAsTaggableOn::Tag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('shorthair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brownhair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('greeneyes') OR LOWER(name) = LOWER('whiteshirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mCACHE ActsAsTaggableOn::Tag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('shorthair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brownhair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('greeneyes') OR LOWER(name) = LOWER('whiteshirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mCACHE ActsAsTaggableOn::Tag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('shorthair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brownhair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('greeneyes') OR LOWER(name) = LOWER('whiteshirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 3], ["taggable_type", "Post"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 2], ["taggable_type", "Post"], ["taggable_id", 3], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 2], ["taggable_type", "Post"], ["taggable_id", 3], ["context", "tags"], ["created_at", "2017-10-24 20:46:05.892585"]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 2]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 3], ["taggable_type", "Post"], ["taggable_id", 3], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 3], ["taggable_type", "Post"], ["taggable_id", 3], ["context", "tags"], ["created_at", "2017-10-24 20:46:05.899211"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 3]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 4], ["taggable_type", "Post"], ["taggable_id", 3], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 4], ["taggable_type", "Post"], ["taggable_id", 3], ["context", "tags"], ["created_at", "2017-10-24 20:46:05.905052"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 4]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 5], ["taggable_type", "Post"], ["taggable_id", 3], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 5], ["taggable_type", "Post"], ["taggable_id", 3], ["context", "tags"], ["created_at", "2017-10-24 20:46:05.910769"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 5]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 6], ["taggable_type", "Post"], ["taggable_id", 3], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 6], ["taggable_type", "Post"], ["taggable_id", 3], ["context", "tags"], ["created_at", "2017-10-24 20:46:05.916338"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 6]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 7], ["taggable_type", "Post"], ["taggable_id", 3], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 7], ["taggable_type", "Post"], ["taggable_id", 3], ["context", "tags"], ["created_at", "2017-10-24 20:46:05.921569"]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 7]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 8], ["taggable_type", "Post"], ["taggable_id", 3], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 8], ["taggable_type", "Post"], ["taggable_id", 3], ["context", "tags"], ["created_at", "2017-10-24 20:46:05.927540"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 8]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 9], ["taggable_type", "Post"], ["taggable_id", 3], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 9], ["taggable_type", "Post"], ["taggable_id", 3], ["context", "tags"], ["created_at", "2017-10-24 20:46:05.933114"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 9]]
+  [1m[35m (111.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/posts/3
+Completed 302 Found in 1248ms (ActiveRecord: 120.2ms)
+
+
+Started GET "/posts/3" for 127.0.0.1 at 2017-10-24 22:46:06 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts?utf8=%E2%9C%93&q=short_hair" for 127.0.0.1 at 2017-10-24 22:46:14 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"short_hair"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" INNER JOIN "taggings" "post_taggings_56168aa" ON "post_taggings_56168aa"."taggable_id" = "posts"."id" AND "post_taggings_56168aa"."taggable_type" = 'Post' AND "post_taggings_56168aa"."tag_id" IN (SELECT "tags"."id" FROM "tags" WHERE "tags"."name" LIKE 'short!_hair' ESCAPE '!')[0m
+  Rendered posts/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 25ms (Views: 22.7ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Load (0.4ms)[0m  [1m[34mSELECT "taggings".* FROM "taggings" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ?[0m  [["taggable_id", 3], ["taggable_type", "Post"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.4ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 3], ["taggable_type", "Post"]]
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActsAsTaggableOn::Tagging Load (1.1ms)[0m  [1m[34mSELECT "taggings".* FROM "taggings" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ?[0m  [["taggable_id", 3], ["taggable_type", "Post"]]
+  [1m[35mSQL (1.1ms)[0m  [1m[31mDELETE FROM "taggings" WHERE "taggings"."id" = ?[0m  [["id", 10]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) - 1 WHERE "tags"."id" = ?[0m  [["id", 2]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "taggings" WHERE "taggings"."id" = ?[0m  [["id", 11]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) - 1 WHERE "tags"."id" = ?[0m  [["id", 3]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "taggings" WHERE "taggings"."id" = ?[0m  [["id", 12]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) - 1 WHERE "tags"."id" = ?[0m  [["id", 4]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "taggings" WHERE "taggings"."id" = ?[0m  [["id", 13]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) - 1 WHERE "tags"."id" = ?[0m  [["id", 5]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "taggings" WHERE "taggings"."id" = ?[0m  [["id", 14]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.4ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) - 1 WHERE "tags"."id" = ?[0m  [["id", 6]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "taggings" WHERE "taggings"."id" = ?[0m  [["id", 15]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) - 1 WHERE "tags"."id" = ?[0m  [["id", 7]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "taggings" WHERE "taggings"."id" = ?[0m  [["id", 16]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) - 1 WHERE "tags"."id" = ?[0m  [["id", 8]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "taggings" WHERE "taggings"."id" = ?[0m  [["id", 17]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) - 1 WHERE "tags"."id" = ?[0m  [["id", 9]]
+  [1m[36mActsAsTaggableOn::Tagging Load (0.1ms)[0m  [1m[34mSELECT "taggings".* FROM "taggings" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."context" = ?[0m  [["taggable_id", 3], ["taggable_type", "Post"], ["context", "tags"]]
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 3]]
+  [1m[35m (83.0ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/posts" for 127.0.0.1 at 2017-10-24 22:48:19 +0200
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.1ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 42ms (Views: 22.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/new" for 127.0.0.1 at 2017-10-24 22:48:22 +0200
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 50ms (Views: 35.0ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2017-10-24 22:48:32 +0200
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/wA6sDF3scQWootTr1Zb13/hoxLybCfGjbZzQ8oCzHtNwO5Yn4G0AVZAd70sEQ1VnsNJn5AW7u8UkpDeHkJTkA==", "post"=>{"title"=>"bang dream", "tag_list"=>"short hair, shirt, skirt, brown hair, glasses, green eyes, white shirt, 1girl", "picture_cache"=>"", "picture"=>#<ActionDispatch::Http::UploadedFile:0x007f293191a9b8 @tempfile=#<Tempfile:/tmp/RackMultipart20171024-3362-aqnv31.jpeg>, @original_filename="1e96767b702b30ec8c4a42f593e5635e.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"post[picture]\"; filename=\"1e96767b702b30ec8c4a42f593e5635e.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"save"}
+Unpermitted parameter: :picture_cache
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.1ms)[0m  [1m[32mINSERT INTO "posts" ("title", "created_at", "updated_at", "picture") VALUES (?, ?, ?, ?)[0m  [["title", "bang dream"], ["created_at", "2017-10-24 20:48:32.390123"], ["updated_at", "2017-10-24 20:48:32.390123"], ["picture", "s0vysvpk7lapfarvqihy.jpeg"]]
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "posts" SET "picture" = 'image/upload/v1508878133/s0vysvpk7lapfarvqihy.jpg' WHERE "posts"."id" = ?[0m  [["id", 4]]
+DEPRECATION WARNING: The behavior of `changed_attributes` inside of after callbacks will be changing in the next version of Rails. The new return value will reflect the behavior of calling the method after `save` returned (e.g. the opposite of what it returns now). To maintain the current behavior, use `saved_changes.transform_values(&:first)` instead. (called from format_tags at /home/andrew/workspace/ahobooru/app/models/post.rb:14)
+DEPRECATION WARNING: The behavior of `changed_attributes` inside of after callbacks will be changing in the next version of Rails. The new return value will reflect the behavior of calling the method after `save` returned (e.g. the opposite of what it returns now). To maintain the current behavior, use `saved_changes.transform_values(&:first)` instead. (called from format_tags at /home/andrew/workspace/ahobooru/app/models/post.rb:14)
+  [1m[36mActsAsTaggableOn::Tag Load (0.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('short hair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brown hair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('green eyes') OR LOWER(name) = LOWER('white shirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mActsAsTaggableOn::Tag Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "tags" WHERE "tags"."name" = ? LIMIT ?[0m  [["name", "short hair"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "tags" ("name") VALUES (?)[0m  [["name", "short hair"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('short hair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brown hair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('green eyes') OR LOWER(name) = LOWER('white shirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mCACHE ActsAsTaggableOn::Tag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('short hair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brown hair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('green eyes') OR LOWER(name) = LOWER('white shirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mCACHE ActsAsTaggableOn::Tag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('short hair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brown hair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('green eyes') OR LOWER(name) = LOWER('white shirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mActsAsTaggableOn::Tag Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "tags" WHERE "tags"."name" = ? LIMIT ?[0m  [["name", "brown hair"], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "tags" ("name") VALUES (?)[0m  [["name", "brown hair"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('short hair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brown hair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('green eyes') OR LOWER(name) = LOWER('white shirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mCACHE ActsAsTaggableOn::Tag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('short hair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brown hair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('green eyes') OR LOWER(name) = LOWER('white shirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mActsAsTaggableOn::Tag Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "tags" WHERE "tags"."name" = ? LIMIT ?[0m  [["name", "green eyes"], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "tags" ("name") VALUES (?)[0m  [["name", "green eyes"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('short hair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brown hair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('green eyes') OR LOWER(name) = LOWER('white shirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mActsAsTaggableOn::Tag Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "tags" WHERE "tags"."name" = ? LIMIT ?[0m  [["name", "white shirt"], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "tags" ("name") VALUES (?)[0m  [["name", "white shirt"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('short hair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brown hair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('green eyes') OR LOWER(name) = LOWER('white shirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 4], ["taggable_type", "Post"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 10], ["taggable_type", "Post"], ["taggable_id", 4], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 10], ["taggable_type", "Post"], ["taggable_id", 4], ["context", "tags"], ["created_at", "2017-10-24 20:48:33.699514"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 10]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 3], ["taggable_type", "Post"], ["taggable_id", 4], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 3], ["taggable_type", "Post"], ["taggable_id", 4], ["context", "tags"], ["created_at", "2017-10-24 20:48:33.706257"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 3]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 4], ["taggable_type", "Post"], ["taggable_id", 4], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 4], ["taggable_type", "Post"], ["taggable_id", 4], ["context", "tags"], ["created_at", "2017-10-24 20:48:33.711550"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 4]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 11], ["taggable_type", "Post"], ["taggable_id", 4], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 11], ["taggable_type", "Post"], ["taggable_id", 4], ["context", "tags"], ["created_at", "2017-10-24 20:48:33.716643"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 11]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 6], ["taggable_type", "Post"], ["taggable_id", 4], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 6], ["taggable_type", "Post"], ["taggable_id", 4], ["context", "tags"], ["created_at", "2017-10-24 20:48:33.721819"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 6]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 12], ["taggable_type", "Post"], ["taggable_id", 4], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 12], ["taggable_type", "Post"], ["taggable_id", 4], ["context", "tags"], ["created_at", "2017-10-24 20:48:33.726739"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 12]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 13], ["taggable_type", "Post"], ["taggable_id", 4], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 13], ["taggable_type", "Post"], ["taggable_id", 4], ["context", "tags"], ["created_at", "2017-10-24 20:48:33.731711"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 13]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 9], ["taggable_type", "Post"], ["taggable_id", 4], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 9], ["taggable_type", "Post"], ["taggable_id", 4], ["context", "tags"], ["created_at", "2017-10-24 20:48:33.737329"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 9]]
+  [1m[35m (90.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/posts/4
+Completed 302 Found in 1450ms (ActiveRecord: 99.7ms)
+
+
+Started GET "/posts/4" for 127.0.0.1 at 2017-10-24 22:48:33 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 26ms (Views: 23.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts?utf8=%E2%9C%93&q=short_hair" for 127.0.0.1 at 2017-10-24 22:48:36 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"short_hair"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" INNER JOIN "taggings" "post_taggings_56168aa" ON "post_taggings_56168aa"."taggable_id" = "posts"."id" AND "post_taggings_56168aa"."taggable_type" = 'Post' AND "post_taggings_56168aa"."tag_id" IN (SELECT "tags"."id" FROM "tags" WHERE "tags"."name" LIKE 'short!_hair' ESCAPE '!')[0m
+  Rendered posts/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 31ms (Views: 28.0ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActsAsTaggableOn::Tagging Load (0.2ms)[0m  [1m[34mSELECT "taggings".* FROM "taggings" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ?[0m  [["taggable_id", 4], ["taggable_type", "Post"]]
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "taggings" WHERE "taggings"."id" = ?[0m  [["id", 18]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) - 1 WHERE "tags"."id" = ?[0m  [["id", 10]]
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "taggings" WHERE "taggings"."id" = ?[0m  [["id", 19]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.3ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) - 1 WHERE "tags"."id" = ?[0m  [["id", 3]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "taggings" WHERE "taggings"."id" = ?[0m  [["id", 20]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) - 1 WHERE "tags"."id" = ?[0m  [["id", 4]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "taggings" WHERE "taggings"."id" = ?[0m  [["id", 21]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) - 1 WHERE "tags"."id" = ?[0m  [["id", 11]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "taggings" WHERE "taggings"."id" = ?[0m  [["id", 22]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) - 1 WHERE "tags"."id" = ?[0m  [["id", 6]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "taggings" WHERE "taggings"."id" = ?[0m  [["id", 23]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) - 1 WHERE "tags"."id" = ?[0m  [["id", 12]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "taggings" WHERE "taggings"."id" = ?[0m  [["id", 24]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) - 1 WHERE "tags"."id" = ?[0m  [["id", 13]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "taggings" WHERE "taggings"."id" = ?[0m  [["id", 25]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) - 1 WHERE "tags"."id" = ?[0m  [["id", 9]]
+  [1m[36mActsAsTaggableOn::Tagging Load (0.1ms)[0m  [1m[34mSELECT "taggings".* FROM "taggings" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."context" = ?[0m  [["taggable_id", 4], ["taggable_type", "Post"], ["context", "tags"]]
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 4]]
+  [1m[35m (87.5ms)[0m  [1m[36mcommit transaction[0m
+Started POST "/posts" for 127.0.0.1 at 2017-10-24 22:49:39 +0200
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/wA6sDF3scQWootTr1Zb13/hoxLybCfGjbZzQ8oCzHtNwO5Yn4G0AVZAd70sEQ1VnsNJn5AW7u8UkpDeHkJTkA==", "post"=>{"title"=>"bang dream", "tag_list"=>"short hair, shirt, skirt, brown hair, glasses, green eyes, white shirt, 1girl", "picture_cache"=>"", "picture"=>#<ActionDispatch::Http::UploadedFile:0x007f29251989d0 @tempfile=#<Tempfile:/tmp/RackMultipart20171024-3362-1lan7q9.jpeg>, @original_filename="1e96767b702b30ec8c4a42f593e5635e.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"post[picture]\"; filename=\"1e96767b702b30ec8c4a42f593e5635e.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"save"}
+Unpermitted parameter: :picture_cache
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  [1m[32mINSERT INTO "posts" ("title", "created_at", "updated_at", "picture") VALUES (?, ?, ?, ?)[0m  [["title", "bang dream"], ["created_at", "2017-10-24 20:49:39.088192"], ["updated_at", "2017-10-24 20:49:39.088192"], ["picture", "ukoaraduko4v5zxoqa6s.jpeg"]]
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "posts" SET "picture" = 'image/upload/v1508878200/ukoaraduko4v5zxoqa6s.jpg' WHERE "posts"."id" = ?[0m  [["id", 5]]
+  [1m[35m (3.4ms)[0m  [1m[31mrollback transaction[0m
+Completed 500 Internal Server Error in 1141ms (ActiveRecord: 6.3ms)
+
+
+  
+NoMethodError (undefined method `gsub!' for nil:NilClass):
+  
+app/models/post.rb:14:in `block in format_tags'
+app/models/post.rb:14:in `each'
+app/models/post.rb:14:in `format_tags'
+app/controllers/posts_controller.rb:21:in `create'
+Started POST "/posts" for 127.0.0.1 at 2017-10-24 22:49:50 +0200
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/wA6sDF3scQWootTr1Zb13/hoxLybCfGjbZzQ8oCzHtNwO5Yn4G0AVZAd70sEQ1VnsNJn5AW7u8UkpDeHkJTkA==", "post"=>{"title"=>"bang dream", "tag_list"=>"short hair, shirt, skirt, brown hair, glasses, green eyes, white shirt, 1girl", "picture_cache"=>"", "picture"=>#<ActionDispatch::Http::UploadedFile:0x007f2924d0e888 @tempfile=#<Tempfile:/tmp/RackMultipart20171024-3362-1v16c3y.jpeg>, @original_filename="1e96767b702b30ec8c4a42f593e5635e.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"post[picture]\"; filename=\"1e96767b702b30ec8c4a42f593e5635e.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"save"}
+Unpermitted parameter: :picture_cache
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("title", "created_at", "updated_at", "picture") VALUES (?, ?, ?, ?)[0m  [["title", "bang dream"], ["created_at", "2017-10-24 20:49:50.907654"], ["updated_at", "2017-10-24 20:49:50.907654"], ["picture", "mvrm4kbunkitwo1scahq.jpeg"]]
+  [1m[35mSQL (0.4ms)[0m  [1m[33mUPDATE "posts" SET "picture" = 'image/upload/v1508878212/mvrm4kbunkitwo1scahq.jpg' WHERE "posts"."id" = ?[0m  [["id", 5]]
+DEPRECATION WARNING: The behavior of `changed_attributes` inside of after callbacks will be changing in the next version of Rails. The new return value will reflect the behavior of calling the method after `save` returned (e.g. the opposite of what it returns now). To maintain the current behavior, use `saved_changes.transform_values(&:first)` instead. (called from format_tags at /home/andrew/workspace/ahobooru/app/models/post.rb:14)
+DEPRECATION WARNING: The behavior of `changed_attributes` inside of after callbacks will be changing in the next version of Rails. The new return value will reflect the behavior of calling the method after `save` returned (e.g. the opposite of what it returns now). To maintain the current behavior, use `saved_changes.transform_values(&:first)` instead. (called from format_tags at /home/andrew/workspace/ahobooru/app/models/post.rb:14)
+  [1m[36mActsAsTaggableOn::Tag Load (0.6ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('short hair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brown hair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('green eyes') OR LOWER(name) = LOWER('white shirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mCACHE ActsAsTaggableOn::Tag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('short hair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brown hair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('green eyes') OR LOWER(name) = LOWER('white shirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mCACHE ActsAsTaggableOn::Tag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('short hair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brown hair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('green eyes') OR LOWER(name) = LOWER('white shirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mCACHE ActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('short hair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brown hair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('green eyes') OR LOWER(name) = LOWER('white shirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mCACHE ActsAsTaggableOn::Tag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('short hair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brown hair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('green eyes') OR LOWER(name) = LOWER('white shirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mCACHE ActsAsTaggableOn::Tag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('short hair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brown hair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('green eyes') OR LOWER(name) = LOWER('white shirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mCACHE ActsAsTaggableOn::Tag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('short hair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brown hair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('green eyes') OR LOWER(name) = LOWER('white shirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mCACHE ActsAsTaggableOn::Tag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('short hair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brown hair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('green eyes') OR LOWER(name) = LOWER('white shirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 5], ["taggable_type", "Post"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 10], ["taggable_type", "Post"], ["taggable_id", 5], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 10], ["taggable_type", "Post"], ["taggable_id", 5], ["context", "tags"], ["created_at", "2017-10-24 20:49:52.089039"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 10]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 3], ["taggable_type", "Post"], ["taggable_id", 5], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 3], ["taggable_type", "Post"], ["taggable_id", 5], ["context", "tags"], ["created_at", "2017-10-24 20:49:52.094630"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 3]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 4], ["taggable_type", "Post"], ["taggable_id", 5], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 4], ["taggable_type", "Post"], ["taggable_id", 5], ["context", "tags"], ["created_at", "2017-10-24 20:49:52.100204"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 4]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 11], ["taggable_type", "Post"], ["taggable_id", 5], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 11], ["taggable_type", "Post"], ["taggable_id", 5], ["context", "tags"], ["created_at", "2017-10-24 20:49:52.105958"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 11]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 6], ["taggable_type", "Post"], ["taggable_id", 5], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 6], ["taggable_type", "Post"], ["taggable_id", 5], ["context", "tags"], ["created_at", "2017-10-24 20:49:52.111033"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 6]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 12], ["taggable_type", "Post"], ["taggable_id", 5], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 12], ["taggable_type", "Post"], ["taggable_id", 5], ["context", "tags"], ["created_at", "2017-10-24 20:49:52.116781"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 12]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 13], ["taggable_type", "Post"], ["taggable_id", 5], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 13], ["taggable_type", "Post"], ["taggable_id", 5], ["context", "tags"], ["created_at", "2017-10-24 20:49:52.122383"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 13]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 9], ["taggable_type", "Post"], ["taggable_id", 5], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 9], ["taggable_type", "Post"], ["taggable_id", 5], ["context", "tags"], ["created_at", "2017-10-24 20:49:52.127841"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 9]]
+  [1m[35m (80.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/posts/5
+Completed 302 Found in 1340ms (ActiveRecord: 88.9ms)
+
+
+Started GET "/posts/5" for 127.0.0.1 at 2017-10-24 22:49:52 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 27ms (Views: 22.7ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mPost Load (0.6ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" LIMIT ?[0m  [["LIMIT", 11]]
+Started GET "/posts?utf8=%E2%9C%93&q=short_hair" for 127.0.0.1 at 2017-10-24 22:50:00 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"short_hair"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts" INNER JOIN "taggings" "post_taggings_56168aa" ON "post_taggings_56168aa"."taggable_id" = "posts"."id" AND "post_taggings_56168aa"."taggable_type" = 'Post' AND "post_taggings_56168aa"."tag_id" IN (SELECT "tags"."id" FROM "tags" WHERE "tags"."name" LIKE 'short!_hair' ESCAPE '!')[0m
+  Rendered posts/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 25ms (Views: 22.0ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Load (0.2ms)[0m  [1m[34mSELECT "taggings".* FROM "taggings" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ?[0m  [["taggable_id", 5], ["taggable_type", "Post"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 5], ["taggable_type", "Post"]]
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActsAsTaggableOn::Tagging Load (0.2ms)[0m  [1m[34mSELECT "taggings".* FROM "taggings" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ?[0m  [["taggable_id", 5], ["taggable_type", "Post"]]
+  [1m[35mSQL (0.8ms)[0m  [1m[31mDELETE FROM "taggings" WHERE "taggings"."id" = ?[0m  [["id", 26]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) - 1 WHERE "tags"."id" = ?[0m  [["id", 10]]
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "taggings" WHERE "taggings"."id" = ?[0m  [["id", 27]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) - 1 WHERE "tags"."id" = ?[0m  [["id", 3]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "taggings" WHERE "taggings"."id" = ?[0m  [["id", 28]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) - 1 WHERE "tags"."id" = ?[0m  [["id", 4]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "taggings" WHERE "taggings"."id" = ?[0m  [["id", 29]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) - 1 WHERE "tags"."id" = ?[0m  [["id", 11]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "taggings" WHERE "taggings"."id" = ?[0m  [["id", 30]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) - 1 WHERE "tags"."id" = ?[0m  [["id", 6]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "taggings" WHERE "taggings"."id" = ?[0m  [["id", 31]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) - 1 WHERE "tags"."id" = ?[0m  [["id", 12]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "taggings" WHERE "taggings"."id" = ?[0m  [["id", 32]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) - 1 WHERE "tags"."id" = ?[0m  [["id", 13]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "taggings" WHERE "taggings"."id" = ?[0m  [["id", 33]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) - 1 WHERE "tags"."id" = ?[0m  [["id", 9]]
+  [1m[36mActsAsTaggableOn::Tagging Load (0.1ms)[0m  [1m[34mSELECT "taggings".* FROM "taggings" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."context" = ?[0m  [["taggable_id", 5], ["taggable_type", "Post"], ["context", "tags"]]
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 5]]
+  [1m[35m (63.5ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/posts/new" for 127.0.0.1 at 2017-10-24 22:53:05 +0200
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 52ms (Views: 23.5ms | ActiveRecord: 1.2ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2017-10-24 22:53:07 +0200
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"f+9uv35J6+oJzppNt4zg2fk+5+Oah/kCs8XKm0JAwhjNL7pX0L/uL0ksZqM0y7ZbGBwNbvj9MCsq4SkGlgBd8w==", "post"=>{"title"=>"bang dream", "tag_list"=>"short hair, shirt, skirt, brown hair, glasses, green eyes, white shirt, 1girl", "picture_cache"=>"", "picture"=>#<ActionDispatch::Http::UploadedFile:0x007f2931219bc8 @tempfile=#<Tempfile:/tmp/RackMultipart20171024-3362-6758n3.jpeg>, @original_filename="1e96767b702b30ec8c4a42f593e5635e.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"post[picture]\"; filename=\"1e96767b702b30ec8c4a42f593e5635e.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"save"}
+Unpermitted parameter: :picture_cache
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "posts" ("title", "created_at", "updated_at", "picture") VALUES (?, ?, ?, ?)[0m  [["title", "bang dream"], ["created_at", "2017-10-24 20:53:07.603804"], ["updated_at", "2017-10-24 20:53:07.603804"], ["picture", "r7spnrdlv5eyolok9o0j.jpeg"]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "posts" SET "picture" = 'image/upload/v1508878409/r7spnrdlv5eyolok9o0j.jpg' WHERE "posts"."id" = ?[0m  [["id", 6]]
+DEPRECATION WARNING: The behavior of `changed_attributes` inside of after callbacks will be changing in the next version of Rails. The new return value will reflect the behavior of calling the method after `save` returned (e.g. the opposite of what it returns now). To maintain the current behavior, use `saved_changes.transform_values(&:first)` instead. (called from format_tags at /home/andrew/workspace/ahobooru/app/models/post.rb:14)
+DEPRECATION WARNING: The behavior of `changed_attributes` inside of after callbacks will be changing in the next version of Rails. The new return value will reflect the behavior of calling the method after `save` returned (e.g. the opposite of what it returns now). To maintain the current behavior, use `saved_changes.transform_values(&:first)` instead. (called from format_tags at /home/andrew/workspace/ahobooru/app/models/post.rb:14)
+  [1m[36mActsAsTaggableOn::Tag Load (0.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('short hair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brown hair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('green eyes') OR LOWER(name) = LOWER('white shirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mCACHE ActsAsTaggableOn::Tag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('short hair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brown hair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('green eyes') OR LOWER(name) = LOWER('white shirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mCACHE ActsAsTaggableOn::Tag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('short hair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brown hair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('green eyes') OR LOWER(name) = LOWER('white shirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mCACHE ActsAsTaggableOn::Tag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('short hair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brown hair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('green eyes') OR LOWER(name) = LOWER('white shirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mCACHE ActsAsTaggableOn::Tag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('short hair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brown hair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('green eyes') OR LOWER(name) = LOWER('white shirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mCACHE ActsAsTaggableOn::Tag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('short hair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brown hair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('green eyes') OR LOWER(name) = LOWER('white shirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mCACHE ActsAsTaggableOn::Tag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('short hair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brown hair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('green eyes') OR LOWER(name) = LOWER('white shirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mCACHE ActsAsTaggableOn::Tag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('short hair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brown hair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('green eyes') OR LOWER(name) = LOWER('white shirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mActsAsTaggableOn::Tag Load (0.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 6], ["taggable_type", "Post"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 10], ["taggable_type", "Post"], ["taggable_id", 6], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 10], ["taggable_type", "Post"], ["taggable_id", 6], ["context", "tags"], ["created_at", "2017-10-24 20:53:08.700122"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 10]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 3], ["taggable_type", "Post"], ["taggable_id", 6], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 3], ["taggable_type", "Post"], ["taggable_id", 6], ["context", "tags"], ["created_at", "2017-10-24 20:53:08.705897"]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 3]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 4], ["taggable_type", "Post"], ["taggable_id", 6], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 4], ["taggable_type", "Post"], ["taggable_id", 6], ["context", "tags"], ["created_at", "2017-10-24 20:53:08.713648"]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 4]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 11], ["taggable_type", "Post"], ["taggable_id", 6], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 11], ["taggable_type", "Post"], ["taggable_id", 6], ["context", "tags"], ["created_at", "2017-10-24 20:53:08.720026"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 11]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 6], ["taggable_type", "Post"], ["taggable_id", 6], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 6], ["taggable_type", "Post"], ["taggable_id", 6], ["context", "tags"], ["created_at", "2017-10-24 20:53:08.725694"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 6]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 12], ["taggable_type", "Post"], ["taggable_id", 6], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 12], ["taggable_type", "Post"], ["taggable_id", 6], ["context", "tags"], ["created_at", "2017-10-24 20:53:08.731449"]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 12]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 13], ["taggable_type", "Post"], ["taggable_id", 6], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 13], ["taggable_type", "Post"], ["taggable_id", 6], ["context", "tags"], ["created_at", "2017-10-24 20:53:08.739426"]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 13]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 9], ["taggable_type", "Post"], ["taggable_id", 6], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 9], ["taggable_type", "Post"], ["taggable_id", 6], ["context", "tags"], ["created_at", "2017-10-24 20:53:08.745903"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 9]]
+  [1m[35m (132.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/posts/6
+Completed 302 Found in 1287ms (ActiveRecord: 140.4ms)
+
+
+Started GET "/posts/6" for 127.0.0.1 at 2017-10-24 22:53:08 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 38ms (Views: 35.0ms | ActiveRecord: 0.3ms)
+
+
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Load (0.5ms)[0m  [1m[34mSELECT "taggings".* FROM "taggings" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ?[0m  [["taggable_id", 6], ["taggable_type", "Post"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 6], ["taggable_type", "Post"]]
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" ORDER BY "posts"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActsAsTaggableOn::Tagging Load (0.4ms)[0m  [1m[34mSELECT "taggings".* FROM "taggings" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ?[0m  [["taggable_id", 6], ["taggable_type", "Post"]]
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "taggings" WHERE "taggings"."id" = ?[0m  [["id", 34]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) - 1 WHERE "tags"."id" = ?[0m  [["id", 10]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "taggings" WHERE "taggings"."id" = ?[0m  [["id", 35]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) - 1 WHERE "tags"."id" = ?[0m  [["id", 3]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "taggings" WHERE "taggings"."id" = ?[0m  [["id", 36]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) - 1 WHERE "tags"."id" = ?[0m  [["id", 4]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "taggings" WHERE "taggings"."id" = ?[0m  [["id", 37]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) - 1 WHERE "tags"."id" = ?[0m  [["id", 11]]
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "taggings" WHERE "taggings"."id" = ?[0m  [["id", 38]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) - 1 WHERE "tags"."id" = ?[0m  [["id", 6]]
+  [1m[35mSQL (0.2ms)[0m  [1m[31mDELETE FROM "taggings" WHERE "taggings"."id" = ?[0m  [["id", 39]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) - 1 WHERE "tags"."id" = ?[0m  [["id", 12]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "taggings" WHERE "taggings"."id" = ?[0m  [["id", 40]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) - 1 WHERE "tags"."id" = ?[0m  [["id", 13]]
+  [1m[35mSQL (0.1ms)[0m  [1m[31mDELETE FROM "taggings" WHERE "taggings"."id" = ?[0m  [["id", 41]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) - 1 WHERE "tags"."id" = ?[0m  [["id", 9]]
+  [1m[36mActsAsTaggableOn::Tagging Load (0.2ms)[0m  [1m[34mSELECT "taggings".* FROM "taggings" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."context" = ?[0m  [["taggable_id", 6], ["taggable_type", "Post"], ["context", "tags"]]
+  [1m[35mSQL (0.3ms)[0m  [1m[31mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 6]]
+  [1m[35m (79.0ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/posts/new" for 127.0.0.1 at 2017-10-24 22:55:35 +0200
+Processing by PostsController#new as HTML
+  Rendering posts/new.html.erb within layouts/application
+  Rendered posts/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 54ms (Views: 23.5ms | ActiveRecord: 1.5ms)
+
+
+Started POST "/posts" for 127.0.0.1 at 2017-10-24 22:55:37 +0200
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EhmAHN5+JX5vY9HRrGDqIxJFeTNwobJ63rI81F1nSbyg2VT0cIgguy+BLT8vJ7yh82eTvhLbe1NHlt9JiSfWVw==", "post"=>{"title"=>"bang dream", "tag_list"=>"short hair, shirt, skirt, brown hair, glasses, green eyes, white shirt, 1girl", "picture_cache"=>"", "picture"=>#<ActionDispatch::Http::UploadedFile:0x007f2925492730 @tempfile=#<Tempfile:/tmp/RackMultipart20171024-3362-p94cn4.jpeg>, @original_filename="1e96767b702b30ec8c4a42f593e5635e.jpeg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"post[picture]\"; filename=\"1e96767b702b30ec8c4a42f593e5635e.jpeg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"save"}
+Unpermitted parameter: :picture_cache
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "posts" ("title", "created_at", "updated_at", "picture") VALUES (?, ?, ?, ?)[0m  [["title", "bang dream"], ["created_at", "2017-10-24 20:55:37.469151"], ["updated_at", "2017-10-24 20:55:37.469151"], ["picture", "pmwnvdfzsdrld4b6d10w.jpeg"]]
+  [1m[35mSQL (0.6ms)[0m  [1m[33mUPDATE "posts" SET "picture" = 'image/upload/v1508878560/pmwnvdfzsdrld4b6d10w.jpg' WHERE "posts"."id" = ?[0m  [["id", 7]]
+DEPRECATION WARNING: The behavior of `changed_attributes` inside of after callbacks will be changing in the next version of Rails. The new return value will reflect the behavior of calling the method after `save` returned (e.g. the opposite of what it returns now). To maintain the current behavior, use `saved_changes.transform_values(&:first)` instead. (called from format_tags at /home/andrew/workspace/ahobooru/app/models/post.rb:14)
+DEPRECATION WARNING: The behavior of `changed_attributes` inside of after callbacks will be changing in the next version of Rails. The new return value will reflect the behavior of calling the method after `save` returned (e.g. the opposite of what it returns now). To maintain the current behavior, use `saved_changes.transform_values(&:first)` instead. (called from format_tags at /home/andrew/workspace/ahobooru/app/models/post.rb:14)
+DEPRECATION WARNING: The behavior of `changed_attributes` inside of after callbacks will be changing in the next version of Rails. The new return value will reflect the behavior of calling the method after `save` returned (e.g. the opposite of what it returns now). To maintain the current behavior, use `saved_changes.transform_values(&:first)` instead. (called from format_tags at /home/andrew/workspace/ahobooru/app/models/post.rb:15)
+DEPRECATION WARNING: The behavior of `changed_attributes` inside of after callbacks will be changing in the next version of Rails. The new return value will reflect the behavior of calling the method after `save` returned (e.g. the opposite of what it returns now). To maintain the current behavior, use `saved_changes.transform_values(&:first)` instead. (called from format_tags at /home/andrew/workspace/ahobooru/app/models/post.rb:15)
+  [1m[36mActsAsTaggableOn::Tag Load (0.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('short_hair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brown_hair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('green_eyes') OR LOWER(name) = LOWER('white_shirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mActsAsTaggableOn::Tag Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "tags" WHERE "tags"."name" = ? LIMIT ?[0m  [["name", "short_hair"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "tags" ("name") VALUES (?)[0m  [["name", "short_hair"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('short_hair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brown_hair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('green_eyes') OR LOWER(name) = LOWER('white_shirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mCACHE ActsAsTaggableOn::Tag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('short_hair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brown_hair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('green_eyes') OR LOWER(name) = LOWER('white_shirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mCACHE ActsAsTaggableOn::Tag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('short_hair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brown_hair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('green_eyes') OR LOWER(name) = LOWER('white_shirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mActsAsTaggableOn::Tag Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "tags" WHERE "tags"."name" = ? LIMIT ?[0m  [["name", "brown_hair"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "tags" ("name") VALUES (?)[0m  [["name", "brown_hair"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.3ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('short_hair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brown_hair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('green_eyes') OR LOWER(name) = LOWER('white_shirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mCACHE ActsAsTaggableOn::Tag Load (0.0ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('short_hair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brown_hair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('green_eyes') OR LOWER(name) = LOWER('white_shirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mActsAsTaggableOn::Tag Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "tags" WHERE "tags"."name" = ? LIMIT ?[0m  [["name", "green_eyes"], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "tags" ("name") VALUES (?)[0m  [["name", "green_eyes"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('short_hair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brown_hair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('green_eyes') OR LOWER(name) = LOWER('white_shirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mActsAsTaggableOn::Tag Exists (0.1ms)[0m  [1m[34mSELECT  1 AS one FROM "tags" WHERE "tags"."name" = ? LIMIT ?[0m  [["name", "white_shirt"], ["LIMIT", 1]]
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "tags" ("name") VALUES (?)[0m  [["name", "white_shirt"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags" WHERE (LOWER(name) = LOWER('short_hair') OR LOWER(name) = LOWER('shirt') OR LOWER(name) = LOWER('skirt') OR LOWER(name) = LOWER('brown_hair') OR LOWER(name) = LOWER('glasses') OR LOWER(name) = LOWER('green_eyes') OR LOWER(name) = LOWER('white_shirt') OR LOWER(name) = LOWER('1girl'))[0m
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT "tags".* FROM "tags" INNER JOIN "taggings" ON "tags"."id" = "taggings"."tag_id" WHERE "taggings"."taggable_id" = ? AND "taggings"."taggable_type" = ? AND (taggings.context = 'tags' AND taggings.tagger_id IS NULL)[0m  [["taggable_id", 7], ["taggable_type", "Post"]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 14], ["taggable_type", "Post"], ["taggable_id", 7], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 14], ["taggable_type", "Post"], ["taggable_id", 7], ["context", "tags"], ["created_at", "2017-10-24 20:55:40.018930"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 14]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 3], ["taggable_type", "Post"], ["taggable_id", 7], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 3], ["taggable_type", "Post"], ["taggable_id", 7], ["context", "tags"], ["created_at", "2017-10-24 20:55:40.026101"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 3]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.3ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 4], ["taggable_type", "Post"], ["taggable_id", 7], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 4], ["taggable_type", "Post"], ["taggable_id", 7], ["context", "tags"], ["created_at", "2017-10-24 20:55:40.031434"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 4]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 15], ["taggable_type", "Post"], ["taggable_id", 7], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 15], ["taggable_type", "Post"], ["taggable_id", 7], ["context", "tags"], ["created_at", "2017-10-24 20:55:40.037016"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 15]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 6], ["taggable_type", "Post"], ["taggable_id", 7], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 6], ["taggable_type", "Post"], ["taggable_id", 7], ["context", "tags"], ["created_at", "2017-10-24 20:55:40.042656"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 6]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 16], ["taggable_type", "Post"], ["taggable_id", 7], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 16], ["taggable_type", "Post"], ["taggable_id", 7], ["context", "tags"], ["created_at", "2017-10-24 20:55:40.047854"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 16]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.1ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 17], ["taggable_type", "Post"], ["taggable_id", 7], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 17], ["taggable_type", "Post"], ["taggable_id", 7], ["context", "tags"], ["created_at", "2017-10-24 20:55:40.053865"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 17]]
+  [1m[36mActsAsTaggableOn::Tag Load (0.2ms)[0m  [1m[34mSELECT  "tags".* FROM "tags" WHERE "tags"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+  [1m[36mActsAsTaggableOn::Tagging Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "taggings" WHERE "taggings"."tag_id" = ? AND "taggings"."taggable_type" = ? AND "taggings"."taggable_id" = ? AND "taggings"."context" = ? AND "taggings"."tagger_id" IS NULL AND "taggings"."tagger_type" IS NULL LIMIT ?[0m  [["tag_id", 9], ["taggable_type", "Post"], ["taggable_id", 7], ["context", "tags"], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "taggings" ("tag_id", "taggable_type", "taggable_id", "context", "created_at") VALUES (?, ?, ?, ?, ?)[0m  [["tag_id", 9], ["taggable_type", "Post"], ["taggable_id", 7], ["context", "tags"], ["created_at", "2017-10-24 20:55:40.060300"]]
+  [1m[35mSQL (0.1ms)[0m  [1m[33mUPDATE "tags" SET "taggings_count" = COALESCE("taggings_count", 0) + 1 WHERE "tags"."id" = ?[0m  [["id", 9]]
+  [1m[35m (177.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/posts/7
+Completed 302 Found in 2781ms (ActiveRecord: 187.2ms)
+
+
+Started GET "/posts/7" for 127.0.0.1 at 2017-10-24 22:55:40 +0200
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  Rendering posts/show.html.erb within layouts/application
+  Rendered posts/show.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 27ms (Views: 22.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/posts?utf8=%E2%9C%93&q=short_hair" for 127.0.0.1 at 2017-10-24 22:55:42 +0200
+Processing by PostsController#index as HTML
+  Parameters: {"utf8"=>"✓", "q"=>"short_hair"}
+  Rendering posts/index.html.erb within layouts/application
+  [1m[36mPost Load (0.4ms)[0m  [1m[34mSELECT "posts".* FROM "posts" INNER JOIN "taggings" "post_taggings_56168aa" ON "post_taggings_56168aa"."taggable_id" = "posts"."id" AND "post_taggings_56168aa"."taggable_type" = 'Post' AND "post_taggings_56168aa"."tag_id" IN (SELECT "tags"."id" FROM "tags" WHERE "tags"."name" LIKE 'short!_hair' ESCAPE '!')[0m
+  Rendered posts/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 32ms (Views: 28.9ms | ActiveRecord: 0.4ms)
+
+

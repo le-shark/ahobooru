@@ -14,6 +14,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'carrierwave'
 gem 'cloudinary'
 gem 'acts-as-taggable-on'
+gem 'purecss-sass'
 
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'

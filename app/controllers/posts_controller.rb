@@ -1,6 +1,11 @@
 class PostsController < ApplicationController
   def index
-    @posts = Post.all
+    if params[:q] && !params[:q].empty?
+      @tags = params[:q].split(' ')
+      @posts = Post.tagged_with(@tags)
+    else
+      @posts = Post.all
+    end
   end
 
   def show
