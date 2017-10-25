@@ -9,6 +9,8 @@ class Post < ApplicationRecord
 
   before_destroy :delete_picture_from_cloud
 
+  scope :desc, -> {order("created_at DESC")}
+
   def format_tags
     if self.tag_list
       self.tag_list = self.tag_list.each {|t| t.gsub!(/\s/, '_')}

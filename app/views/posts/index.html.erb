@@ -1,7 +1,9 @@
 <% @posts.each do |post| %>
   <div class="thumb-container">
     <%= link_to post do %>
-      <%= image_tag post.picture_url, class: "image-thumb" %>
+      <div class="image-thumb-container">
+        <%= image_tag post.picture_url, class: "image-thumb" %>
+      </div>
     <% end %>
   </div>
 <% end %>
