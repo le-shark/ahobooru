@@ -15,6 +15,7 @@ gem 'carrierwave'
 gem 'cloudinary'
 gem 'acts-as-taggable-on'
 gem 'purecss-sass'
+gem 'devise'
 
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
