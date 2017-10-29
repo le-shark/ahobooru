@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     get 'logout', to: 'devise/sessions#destroy'
   end
   resources :posts
+  resources :users, only: :show
 
   get 'users', to: 'static_pages#users'
 

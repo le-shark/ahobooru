@@ -11,11 +11,19 @@ gem 'sqlite3'
 gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
+# Image uploading
 gem 'carrierwave'
 gem 'cloudinary'
+# Tags (subject to refactoring)
 gem 'acts-as-taggable-on'
+# Stylesheets
 gem 'purecss-sass'
+# Authentication
 gem 'devise'
+# Image size
+gem 'fastimage'
+# Pagination
+gem 'will_paginate'
 
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'

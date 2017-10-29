@@ -6,6 +6,7 @@ class Post < ApplicationRecord
   validates :title, presence: true
   validates :picture, presence: true
 
+  belongs_to :user
 
   before_destroy :delete_picture_from_cloud
 
